@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--condicionais é aquilo que ira verificar as condições e se(if) for verdade vai executar x coisa e caso contrario (else) ou caso queira verificar outra coisa (else if) 
+switch vai definir os casos(cases) que vai percorrer como no code é que no pai caso for kaue ira retornar ele é incrivel caso for outro não é ele e nenhum nem outro default-->
+    <script>
+
+        var filho = "kaue";
+        var pai = "val";
+
+        if ("kaue" == filho) {
+            console.log("é filho")
+        } else {
+            console.log("não é filho")
+        }
+
+        if ("joao" == filho) {
+            console.log("sim é filho")
+        } else {
+            console.log("não é filho")
+        }
+
+        if ("val" == pai) {
+            console.log("sim é pai")
+        } else {
+            console.log("não é pai")
+        }
+
+        if ("jorge" == pai) {
+            console.log("é pai")
+        } else {
+            console.log("não é pai")
+        }
+
+        if ("kaue" == filho) {
+            console.log("sim é filho")
+        }
+        else if ("val" == pai) {
+            console.log("ele é pai")
+        }
+
+        switch (pai) {
+            case "kaue":
+                console.log("é ele o incrivel");
+                break;
+
+            case "outro":
+                console.log("não é ele")
+                break;
+
+            default:
+                console.log("não é nenhum e nem outro q bosta")
+                break;
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

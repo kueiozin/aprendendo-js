@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica js</title>
+</head>
+<body>
+<!--aqui estou estudando de como funciona os seletores em javascript, como da para se ver no code temos classes com o mesmo nome "teste" porem com valores diferentes, do um ao cinco. uma div id pai com classes filhos com diferentes valores e uma div id paizao com classes filhos com diferentes valores da div id pai
+e dois paragrafos com difentes valores -->
+    <div class="teste">1</div>
+    <div class="teste">2</div>
+    <div class="teste">3</div>
+    <div class="teste">4</div>
+    <div class="teste">5</div>
+    <br>
+
+    <div id="pai">
+        <div class="filho">1</div>
+        <div class="filho">2</div>
+        <div class="filho">3</div>
+    </div>
+    <br>
+    
+    <div id="paizao">
+        <div class="filho">oi</div>
+        <div class="filho">ola</div>
+        <div class="filho">eae</div>
+    </div>
+    <br>
+    
+    <p>oi</p>
+    <p>olá</p>
+
+<!--temos um console log que vai mostrar no console do browser que os elementos que estou chamando pelo nome da sua classe (teste) em seu formato html que seria o quarto ja que na programação seria 0 1 2 3 4 dando o resultado 4
+no outro console log estou chamando a div id paizao selecionando as class filhos resultando em oi
+e no ultimo a mesma de cima só que na div id pai com as mesmas class name porem o resultado é 2-->
+<script>
+    console.log(
+
+        document.getElementsByClassName("teste")[3].innerHTML
+
+    )
+    console.log(
+
+        document.getElementById("paizao").querySelectorAll(".filho")[0].innerHTML
+    
+    )
+    console.log(
+
+        document.getElementById("pai").querySelectorAll(".filho")[1].innerHTML
+
+)
+
+</script>
+
+</script>
+</body>
+</html>

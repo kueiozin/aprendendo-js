@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <!--objeto é uma super variavel com varios valores dentro chamados de indice, como no code abaixo, temos uma var carro com indices(informações) como placa modelo e marca, então uma variavel que armazena outras informações, e com um indice chamada opcionais com mais variaveis chamada cambio e combustivel e podendo colocar mais e mais informações para criarmos nosso objeto no console log da para se ver como puxar as informações dos opcionais
+caso tenha um indice com duas palavras não é possivel dar espaço ou traço, tem que trazer em string e para chamar esse indice no console log tem outra forma de acessar-->
+<script>
+
+    var carro ={
+        placa:"AAA-111",
+        modelo: "sedã",
+        marca:"hyundai",
+        opcionais:{
+            cambio:"auto",
+            combustivel:"flex"
+        },
+        "outra-coisa":"moto"
+    };
+
+    console.log(carro.opcionais.cambio);
+    console.log(carro["outra-coisa"]);
+
+</script>
+
+
+</body>
+</html>

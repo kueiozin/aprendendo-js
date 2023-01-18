@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!--arrays vetores funcionam com valores que são representados como indice, começando pelo 0
+exemplo:
+indice 0, indice 1, indice 2
+[valor 1, valor  2, valor 3]
+ou
+indice 0, indice 1,    indice 2
+[valor 1, valor  2, [valor01,02]]
+.lenght para saber quantos indices tem na array
+para pedir um indice na array usamos [x] que x seria o numero do indice 
+caso digite um indice q n existe seria undefined 
+é possivel passar objetos em array
+tambem é possivel armazenar uma array dentro de outra array aonde no console log vai [1] por ser o dindice do array e [0] por ser o primeiro indice da array dentro da array
+é possivel usar variaveis para nomear os indices e ai no console log ao inves de usar [1][1][0] é possivel usar nomes como [nome][cidade][celular] para ajudar na semantica do code-->
+
+<script>
+
+var array=["kauê", 19,"são paulo",{nome:"mundão"}];
+var array2=[
+    "kaue",
+    ['dados',['outro']]
+
+];
+
+console.log(array[3])
+console.log(array2[1][1][0])
+</script>
+
+
+</body>
+</html>

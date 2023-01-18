@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create Elemente</title>
+</head>
+<body>
+    
+
+<!--estou criando uma variavel img que vai criar um documento img com o link(scr) no site lorem pixel 400 por 400 e em seguida uma varial paragrafo que ira dizer "olá,tudo bem?" usando o console log para mostrar os resultados no console do browser-->
+<script>
+
+    var img = document.createElement("img");
+    img.src="http://lorempixel.com.br/400/400";
+
+    var p = document.createElement("p");
+    p.innerHTML = "olá,tudo bem?"
+
+    console.log(img,p)
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--for é um loop que recebe 3 tipos de 3 parametro
+    em parentese do for é para saber quantas vezes vai se repetir o processo e qual seu valor inicial let(var) i(index) recebe o valor 0, apos isso comparamos se i é menor que o numero de js e depois adicionamos mais 1 ao valor de i para o loop n ser infinito 
+for each só funciona com prototype e recebe 2 paramentros
+    um é o elemento, e depois o index como por exemplo se na array tiver 1,2,3,4 o primeiro parametro ira colocar a array e o segundo sua posicao
+map faz a msm coisa que o for each so que retorna uma lista nova
+e o while roda enquanto a função for verdadeira -->
+
+<body>
+    <div class="js">react</div>
+    <div class="js">angular</div>
+    <div class="js">typescript</div>
+    <div class="js">es6</div>
+
+    <script>
+        var js = document.getElementsByClassName("js");
+
+        for (let i = 0; i < js.length; i++) {
+            console.log(i);
+            console.log(js[i]);
+            let texto = js[i].innerHTML;
+            console.log(i)
+            js[i].innerHTML = "aula " + texto + " js"
+            // deve retornar aula react js como exemplo//
+
+
+            var array = [1, 2, 3, 4]
+
+            console.log(js, array)
+            // for usa todo tipo de array tanto html collection como array array
+
+        }
+        var array2 = [1, 2, 3, 4];
+        array.forEach(function (element, index) {
+            if (element === 1) {
+                array[index] = "palavra"
+            }
+            console.log(array2)
+            // só percorre o tipo array prototype ao inves de html collection
+        })
+
+        var array3 = [1, 2, 3, 4];
+        var nova = array3.map(function(element, index) {
+            if (element === 1) {
+                element = "outra coisa";
+            }
+            return element;
+            console.log(nova);
+            //map retorna uma array nova
+        })
+        
+        var zero = 0;
+
+        while(zero < 5) {
+            console.log("oi");
+
+            zero++;
+        }
+    </script>
+</body>
+
+</html>
