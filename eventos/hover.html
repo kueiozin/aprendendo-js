@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="#" id="link">
+        <h1>olá, tudo bem?</h1>
+    </a>
+
+    <table style="width:100%;">
+        <thead>
+            <th align="left">nome</th>
+            <th align="left">idade</th>
+        </thead>
+        <tbody>
+            <tr class="tr">
+                <td style="height: 30px;">aliens</td>
+                <td style="height: 30px;">2000</td>
+            </tr>
+            <tr class="tr">
+                <td style="height: 30px;">bixo papao</td>
+                <td style="height: 30px;">3000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+
+        var link = document.getElementById("link")
+    
+        var trs = document.getElementsByClassName("tr")
+
+        link.addEventListener("mouseover",function(){
+            alert("ola")
+        })
+    </script>
+
+</body>
+
+</html>

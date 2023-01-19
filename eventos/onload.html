@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!--eventos são quando acontecem algo como um click de botao ou quando a pagina é carregad
+nesse code o eveneto onload aparece quando a pagina é carregada, que seria no evento de todo o code rodar ele ira rodar, então primeiro aparece o alerta da pagina carregando e depois pagina carregada-->
+
+
+    <script>
+        console.log("pagina carregando")
+        window.onload = function () {
+            console.log("pagina carregada")
+        }
+        window.onload = function (){
+            alert("pagina carregada")
+        }
+        alert("pagina carregando")
+    </script>
+
+</body>
+
+</html>

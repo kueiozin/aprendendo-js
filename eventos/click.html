@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--evento de clickar, aonde nessa vez temos um botao html, no script criamos uma variavel que pega o elemento id btn e na qual o iremos adicionanr um evento(addeventlistener) que (nome do evento,funcao que executa pos evento)-->
+
+<body>
+    <h4 id="title">botão</h4>
+    <button id="btn">click</button>
+    <script>
+        var botao = document.getElementById("btn");
+        var title = document.getElementById("title");
+        console.log(btn)
+        botao.addEventListener("click", function () {
+            alert("voce clickou no botão");
+            title.remove();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<!---->
+    <!--função é um bloco de codigo que vai receber um nome e em seguida parametros dentro dos parenteses, que se  tornaram variaveis de escopo local
+    como no code abaixo, temos uma função chamada calculadrademedia com parametros nota 1 nota 2 nota 3 nota 4
+na qual vai retornar o valor de cada nota dada no console divido por 4
+    temos um objeto chamado pessoa com nome idade e cidade, abaixo uma funcao chamada novapessoa
+com parametros iguais do objeto,e com isso ele pegara pessoa.nome que é o parametro do objeto e transformara em outro nome colocada no parametro do novapessoa, como tambem é possivel criar um novo objeto usando funcao -->
     <script>
 
-        function nomedafuncao(){
-            return 1;
+        function calculadorademedia(nota1, nota2, nota3, nota4) {
+            return (nota1 + nota2 + nota3 + nota4) / 4;
         }
-        nomedafuncao()
 
+        calculadorademedia();
+
+        var pessoa = {
+            nome: "kaue gomes",
+            idade: 19,
+            cidade: "são paulo"
+        };
+
+        function novapessoa(nome, idade, cidade) {
+            pessoa.nome = nome;
+            pessoa.idade = idade;
+            pessoa.cidade = cidade;
+        }
+        function pessoa2(novoObjetoPessoa) {
+            if (typeof novoObjetoPessoa == 'object') {
+                pessoa = novoObjetoPessoa;
+                return true;
+            } else { 
+                return false }
+        }
     </script>
 </body>
+
 </html>
